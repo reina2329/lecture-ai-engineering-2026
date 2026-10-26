@@ -8,7 +8,7 @@
 
 ## 宿題
 
-- 取り組んだレベル：基礎 / 実装 / 発展
-- やったこと：
-- 結果：
-- 気づき・疑問：
+- 取り組んだレベル：基礎
+- やったこと：temperature=1.0(gemini-3.5-flash,temperature=0.0(gemini-3.5-flash-lite),temperature=1.0(gemini-3.5-flash-lite)の3パターンで、同じ「LoRAとは何ですか？」という質問を送り、回答を比較した。
+- 結果：モデルによる違いという観点では、flash（583トークン）は、lite（607〜674トークン）に比べて要点がコンパクトにまとまっていた。また、Temperatureによる違いでは、Temperature = 0.0は事実ベースであるのに対し、Temperature = 1.0は比喩が多くなっていた。
+- 気づき・疑問：gemini-3.5-flash (Temp=1.0)がバランスが良いと感じた。
